@@ -1,0 +1,44 @@
+.EightBall-text {
+    color: white;
+    font-size: 3em;
+}
+
+button {
+    box-shadow: 50px 30px 10px #678;
+    margin: 20px;
+    border-radius: 50%;
+    border: solid 1px black;
+    border-style: none;
+    width: 50vw;
+    height: 50vw;
+    transition: background-color 2s ease-in;
+}
+
+
+button.shaking {
+    animation-name: shaking;
+    animation-duration: 0.2s;
+    animation-iteration-count: 5;
+    animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+@keyframes shaking {
+    50% {transform: translate(5px, 5px)}
+    100% {transform: translate(0px, 0px)}
+}
+
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: rgb(207, 56, 56);
+}
+
+.goldenrod {
+    background-color: goldenrod;
+}
